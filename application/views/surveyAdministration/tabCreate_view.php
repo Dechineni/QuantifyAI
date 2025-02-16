@@ -81,7 +81,14 @@ App()->getClientScript()->registerScript("tabCreate-view-variables", "
                             <span class='annotation text-danger'><?php echo  gT("Required"); ?> </span>
                         </div>
                     </div>
-                    <div class="mb-3 disNn">
+                    <div class="mb-3">
+                        <label for="surveyNsize"><?= gT('N Size') ?></label>
+                        <input type="text" class="form-control" name="surveyls_nsize" id="surveyNsize" required="required">
+                        <div class="form-control-static">
+                            <span class='annotation text-danger'><?php echo  gT("Required"); ?> </span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label" for="language"><?= gT('Base language:') ?></label>
                         <div>
                             <?php $this->widget('yiiwheels.widgets.select2.WhSelect2', array(
@@ -94,7 +101,7 @@ App()->getClientScript()->registerScript("tabCreate-view-variables", "
                             )); ?>
                         </div>
                     </div>
-                    <div class="mb-3 disNn">
+                    <div class="mb-3">
                         <label class=" form-label" for='gsid'><?php eT("Survey group:"); ?></label>
                         <div>
                             <?php $this->widget('yiiwheels.widgets.select2.WhSelect2', array(
@@ -134,13 +141,6 @@ App()->getClientScript()->registerScript("tabCreate-view-variables", "
                                 'id' => 'adminemail',
                                 'size' => '50',
                             )); ?>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="surveyNsize"><?= gT('N Size') ?></label>
-                        <input type="text" class="form-control" name="surveyls_nsize" id="surveyNsize" required="required">
-                        <div class="form-control-static">
-                            <span class='annotation text-danger'><?php echo  gT("Required"); ?> </span>
                         </div>
                     </div>
                     <!-- Submit -->

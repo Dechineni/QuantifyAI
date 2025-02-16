@@ -1763,6 +1763,16 @@ class Survey extends LSActiveRecord implements PermissionInterface
                 'desc' => 'correct_relation_defaultlanguage.surveyls_title desc',
             ),
 
+            'ccodepo' => array(
+                'asc' => 'correct_relation_defaultlanguage.surveyls_ccodepo asc',
+                'desc' => 'correct_relation_defaultlanguage.surveyls_ccodepo desc',
+            ),
+
+            'nsize' => array(
+                'asc' => 'correct_relation_defaultlanguage.surveyls_nsize asc',
+                'desc' => 'correct_relation_defaultlanguage.surveyls_nsize desc',
+            ),
+
             'creation_date' => array(
                 'asc' => 't.datecreated asc',
                 'desc' => 't.datecreated desc',
